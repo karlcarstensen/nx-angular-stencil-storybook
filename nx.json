@@ -1,0 +1,47 @@
+{
+  "npmScope": "nx-angular-stencil-storybook",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "angular-app": {
+      "tags": []
+    },
+    "angular-app-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "angular-app"
+      ]
+    },
+    "payactiv-ui": {
+      "tags": []
+    },
+    "payactiv-ui-angular": {
+      "tags": []
+    }
+  }
+}

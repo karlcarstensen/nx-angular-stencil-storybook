@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-angular-stencil-storybook/ui-angular": [
+        "libs/ui-angular/src/index.ts"
+      ],
+      "@nx-angular-stencil-storybook/stencil": ["libs/stencil/src/index.ts"],
+      "@nx-angular-stencil-storybook/stencil/loader": [
+        "dist/libs/stencil/loader"
+      ],
+      "@nx-angular-stencil-storybook/ui": ["libs/ui/src/index.ts"],
+      "@nx-angular-stencil-storybook/ui/loader": ["dist/libs/ui/loader"],
+      "@nx-angular-stencil-storybook/payactiv-ui": [
+        "libs/payactiv-ui/src/index.ts"
+      ],
+      "@nx-angular-stencil-storybook/payactiv-ui/loader": [
+        "dist/libs/payactiv-ui/loader"
+      ],
+      "@nx-angular-stencil-storybook/payactiv-ui-angular": [
+        "libs/payactiv-ui-angular/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

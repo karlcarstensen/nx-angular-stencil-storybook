@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #EBF3FF;
+  border-radius: 0;
+  box-shadow: none;
+  color: #0063D1;
+  display: inline-block;
+  font-family: "Circular XX Book", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  height: 106px;
+  width: 375px;
+
+  &:hover {
+    background-color: #EBF3FF;
+    // filter: brightness(110%);
+  }
+}

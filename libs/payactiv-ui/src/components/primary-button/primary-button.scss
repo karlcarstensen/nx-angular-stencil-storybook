@@ -1,0 +1,24 @@
+@import '../../global/global.scss';
+
+:host {
+  display: block;
+}
+
+button {
+  background-color: $payactiv-blue;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  color: white;
+  display: inline-block;
+  font-family: "Circular XX Book", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  height: 60px;
+  width: 327px;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
